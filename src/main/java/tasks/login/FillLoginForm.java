@@ -2,6 +2,8 @@ package tasks.login;
 
 import actions.Click;
 import actions.Enter;
+import com.aventstack.extentreports.Status;
+import helpers.ScreenshotHelper;
 import org.openqa.selenium.WebDriver;
 import ui.LoginFormUI;
 import ui.RegisterFormUI;
@@ -13,7 +15,7 @@ public class FillLoginForm {
         Enter.text(driver, LoginFormUI.passwordTxt, password);
 
         Click.on(driver, LoginFormUI.loginBtn);
-        //ScreenShotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Formulario llenado y orden realizada");
+        ScreenshotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Formulario llenado y orden realizada");
     }
 }
 

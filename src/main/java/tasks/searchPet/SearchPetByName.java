@@ -1,6 +1,8 @@
 package tasks.searchPet;
 
 import actions.Enter;
+import com.aventstack.extentreports.Status;
+import helpers.ScreenshotHelper;
 import org.openqa.selenium.WebDriver;
 import actions.WaitUntilElement;
 import ui.HomeUI;
@@ -11,6 +13,6 @@ public class SearchPetByName {
             throw new Exception("Barra de Búsqueda no encontrada");
 
         Enter.text(driver, HomeUI.searchBar, name);
-        //ScreenShotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Formulario llenado y orden realizada");
+        ScreenshotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Formulario llenado y orden realizada");
     }
 }

@@ -3,6 +3,7 @@ package tasks.register;
 import actions.Click;
 import actions.Enter;
 import com.aventstack.extentreports.Status;
+import helpers.ScreenshotHelper;
 import org.openqa.selenium.WebDriver;
 import ui.RegisterFormUI;
 
@@ -24,6 +25,6 @@ public class FillRegisterForm {
         Enter.text(driver, RegisterFormUI.dateBirthTxt, birthday);
 
         Click.on(driver, RegisterFormUI.registerBtn);
-        //ScreenShotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Formulario llenado y orden realizada");
+        ScreenshotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Formulario llenado y orden realizada");
     }
 }

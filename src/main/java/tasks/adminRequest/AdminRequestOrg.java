@@ -2,6 +2,8 @@ package tasks.adminRequest;
 
 import actions.Click;
 import actions.WaitUntilElement;
+import com.aventstack.extentreports.Status;
+import helpers.ScreenshotHelper;
 import org.openqa.selenium.WebDriver;
 import ui.AdminRequestOrgUI;
 import ui.PetUI;
@@ -12,6 +14,6 @@ public class AdminRequestOrg {
             throw new Exception("El botón no fue encontrado");
 
         Click.on(driver, AdminRequestOrgUI.acceptButton);
-        //ScreenShotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Formulario llenado y orden realizada");
+        ScreenshotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Formulario llenado y orden realizada");
     }
 }

@@ -64,12 +64,6 @@ public class AdoptionPet extends BaseTest {
 
         //Assert
         Assert.assertEquals(chosenPet,petName);
-
-
-
-
-
-
     }
 }
 
