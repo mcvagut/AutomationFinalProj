@@ -14,13 +14,12 @@ jobs:
   steps:
   - task: Maven@3
     inputs:
-      mavenPomFile: 'path/to/selenium/tests/pom.xml'
+      mavenPomFile: 'pom.xml'
       mavenOptions: '-Xmx3072m'
       javaHomeOption: 'JDKVersion'
       jdkVersionOption: '1.11'
       jdkArchitectureOption: 'x64'
       publishJUnitResults: true
-      testResultsFiles: 'path/to/selenium/tests/**/surefire-reports/TEST-*.xml'
       goals: 'clean test'
     displayName: 'Run Selenium Tests'
 
