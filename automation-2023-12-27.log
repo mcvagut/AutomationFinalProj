@@ -1,3 +1,3 @@
-2023-12-30T01:48:50,567 [main] INFO  (BaseTest.java:34) - Starting the configuration method for the test case: Registro de Nuevo Usuario
-2023-12-30T01:48:52,614 [main] INFO  (BaseTest.java:51) - Navigate to http://localhost:3000
-2023-12-30T01:49:09,855 [main] INFO  (BaseTest.java:81) - Closing the driver
+2023-12-30T02:58:57,774 [main] INFO  (BaseTest.java:34) - Starting the configuration method for the test case: Registro de Nuevo Usuario
+2023-12-30T02:58:59,738 [main] INFO  (BaseTest.java:51) - Navigate to http://localhost:3000
+2023-12-30T03:00:00,212 [main] INFO  (BaseTest.java:81) - Closing the driver
