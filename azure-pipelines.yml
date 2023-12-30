@@ -8,14 +8,19 @@ trigger:
 
 pool: proyecto
 
-steps:
-- task: Maven@3
-  inputs:
-    mavenPomFile: 'pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.11'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
+jobs:
+- job: RunSeleniumTests
+  displayName: 'Run Selenium Tests'
+  steps:
+  - task: Maven@3
+    inputs:
+      mavenPomFile: 'path/to/selenium/tests/pom.xml'
+      mavenOptions: '-Xmx3072m'
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.11'
+      jdkArchitectureOption: 'x64'
+      publishJUnitResults: true
+      testResultsFiles: 'path/to/selenium/tests/**/surefire-reports/TEST-*.xml'
+      goals: 'clean test'
+    displayName: 'Run Selenium Tests'
+
