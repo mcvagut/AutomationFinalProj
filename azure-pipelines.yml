@@ -15,7 +15,7 @@ steps:
     versionSpec: "11"
     jdkArchitectureOption: x64
     jdkSourceOption: LocalDirectory
-    jdkFile: "C:/Program Files/Java/jdk-11/bin"
+    jdkFile: "C:/Program Files/Java/jdk-11/bin/java.exe"
     jdkDestinationDirectory: "C:/Usuarios/MoisesC/Escritorio/destination"
     cleanDestinationDirectory: true
 - task: Maven@3
