@@ -1,25 +1,26 @@
-# Maven
-# Build your Java project and run tests with Apache Maven.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/java
-
 trigger:
 - main
 
 pool: proyecto
 
 jobs:
-- job: RunSeleniumTests
-  displayName: 'Run Selenium Tests'
+- job: LevantarAplicacion
+  displayName: 'Levantar Aplicación Completa'
   steps:
+  - script: 'cd C:\Users\MoisesC\Desktop\Adop Masc con graph && start scriptFront.cmd'
+    displayName: 'Levantar Frontend'
+  - script: 'cd C:\Users\MoisesC\Desktop\Adop Masc con graph && start scriptBack.cmd'
+    displayName: 'Levantar Backend'
+  - script: 'cd C:\Users\MoisesC\Desktop\Adop Masc con graph && start scriptAdmin.cmd'
+    displayName: 'Levantar Admin'
+
+  # Agregar un nuevo paso para ejecutar las pruebas de Selenium con Maven
   - task: Maven@3
     inputs:
-      mavenPomFile: 'pom.xml'
+      mavenPomFile: 'pom.xml'  # Ajusta la ruta correcta al archivo pom.xml
       mavenOptions: '-Xmx3072m'
       javaHomeOption: 'JDKVersion'
       jdkVersionOption: '1.11'
       jdkArchitectureOption: 'x64'
-      publishJUnitResults: true
       goals: 'clean test'
-    displayName: 'Run Selenium Tests'
-
+    displayName: 'Ejecutar Pruebas Selenium con Maven'
