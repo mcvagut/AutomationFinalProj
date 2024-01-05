@@ -1,25 +1,25 @@
 package adoption;
 
-import base.BaseTest;
+import baseUser.BaseTestUser;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tasks.adminRequest.AdminRequestOrg;
-import tasks.adoption.GetFirstNamePet;
-import tasks.adoptionApplication.AdoptionApplication;
-import tasks.adoptionApplication.GetNamePet;
-import tasks.historyAdoption.HistoryAdoptionUser;
-import tasks.login.FillLoginForm;
-import tasks.logout.Logout;
-import tasks.logout.LogoutOrg;
-import tasks.petCard.PetCardSelection;
-import tasks.petCardOrg.PetCardOrgSelection;
-import tasks.register.FillRegisterForm;
-import tasks.register.GoToRegisterPage;
-import tasks.register.SelectRegisterTypeForm;
-import tasks.searchPet.SearchPetByName;
+import user.tasks.adminRequest.AdminRequestOrg;
+import user.tasks.adoption.GetFirstNamePet;
+import user.tasks.adoptionApplication.AdoptionApplication;
+import user.tasks.adoptionApplication.GetNamePet;
+import user.tasks.historyAdoption.HistoryAdoptionUser;
+import user.tasks.login.FillLoginForm;
+import user.tasks.logout.Logout;
+import user.tasks.logout.LogoutOrg;
+import user.tasks.petCard.PetCardSelection;
+import user.tasks.petCardOrg.PetCardOrgSelection;
+import user.tasks.register.FillRegisterForm;
+import user.tasks.register.GoToRegisterPage;
+import user.tasks.register.SelectRegisterTypeForm;
+import user.tasks.searchPet.SearchPetByName;
 
 
-public class AdoptionPet extends BaseTest {
+public class AdoptionPet extends BaseTestUser {
     @Test(description = "Registro de Nuevo Usuario")
     public void register() throws Exception {
 

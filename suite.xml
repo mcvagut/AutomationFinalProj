@@ -1,10 +1,14 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="Purchase" verbose="1" >
+<suite name="Purchase" verbose="1" preserve-order="true" >
     <test name="Prueba de Purchase" >
         <parameter name="browser" value="chrome" />
-        <packages>
-            <package name="adoption"/>
-        </packages>
+        <classes>
+            <class name="petAdd.CreatePet" />
+            <class name="adoption.AdoptionPet" />
+            <class name="deletePet.DeletePet" />
+            <class name="deleteUser.DeleteUserFromAdmin" />
+        </classes>
     </test>
 </suite>
+
