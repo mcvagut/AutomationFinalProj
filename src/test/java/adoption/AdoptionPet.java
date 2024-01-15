@@ -51,6 +51,7 @@ public class AdoptionPet extends BaseTestUser {
         PetCardOrgSelection.perform(driver);
         Thread.sleep(3000);
         AdminRequestOrg.perform(driver);
+        Thread.sleep(5000);
         LogoutOrg.perform(driver);
         Thread.sleep(5000);
 
