@@ -20,7 +20,7 @@ import java.util.concurrent.TimeUnit;
 public class BaseTestAdmin {
 
     protected WebDriver driver;
-    private String url = "http://localhost:3001/login";
+    private String url = "http://localhost:3001";
     private String browser = "chrome";
     private static final Logger log = LogManager.getLogger(BaseTestAdmin.class);
 
