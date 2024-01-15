@@ -20,7 +20,7 @@ import user.tasks.searchPet.SearchPetByName;
 
 
 public class AdoptionPet extends BaseTestUser {
-    @Test(description = "Registro de Nuevo Usuario")
+    @Test(description = "Proceso de Adopción de una mascota")
     public void register() throws Exception {
 
         //Flujo como Usuario
@@ -53,7 +53,7 @@ public class AdoptionPet extends BaseTestUser {
         AdminRequestOrg.perform(driver);
         Thread.sleep(5000);
         LogoutOrg.perform(driver);
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
         //Flujo como Usuario para verificar que la solicitud fue aceptada
         FillLoginForm.perform(driver, "usuario", "password");

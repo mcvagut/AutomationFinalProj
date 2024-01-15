@@ -11,8 +11,7 @@ public class AdminRequestOrg {
     public static void perform(WebDriver driver) throws Exception {
         if (!WaitUntilElement.isVisible(driver, AdminRequestOrgUI.acceptButton, 5))
             throw new Exception("El botón no fue encontrado");
-        Thread.sleep(2000);
-        ScreenshotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Gestionar solicitud de Adopción");
         Click.on(driver, AdminRequestOrgUI.acceptButton);
+        ScreenshotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Gestionar solicitud de Adopción");
     }
 }
