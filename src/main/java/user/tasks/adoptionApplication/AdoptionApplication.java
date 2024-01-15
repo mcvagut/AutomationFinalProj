@@ -9,6 +9,6 @@ import user.ui.PetUI;
 public class AdoptionApplication {
     public static void perform(WebDriver driver) throws Exception {
         Click.on(driver, PetUI.adoptionButton);
-        ScreenshotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Formulario llenado y orden realizada");
+        ScreenshotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Solicitud de Adopción");
     }
 }

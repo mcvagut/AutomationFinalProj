@@ -10,6 +10,6 @@ public class Logout {
     public static void perform(WebDriver driver) throws Exception {
 
         Click.on(driver, SidebarUI.logoutBtn);
-        ScreenshotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Formulario llenado y orden realizada");
+        ScreenshotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Cierre de sesión de usuario");
     }
 }

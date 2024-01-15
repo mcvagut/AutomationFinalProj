@@ -17,7 +17,10 @@ public class CreatePet extends BaseTestAdmin {
         FillLoginFormAmin.perform(driver, "moises", "moises");
         PetPage.perform(driver);
         AddPetModal.perform(driver);
-        FillRegisterNewPet.perform(driver, "MascotaDiplomado", "Maltese", "Ejemplo de automatización", 2, "Blanco", "La Paz");
+        FillRegisterNewPet.perform(driver, "MascotaDiplomado", "Maltese", "Ejemplo de automatización",
+                2, "Blanco", "La Paz");
+        Thread.sleep(2000);
+        PetPage.perform(driver);
         Thread.sleep(2000);
         LogoutAdmin.perform(driver);
 

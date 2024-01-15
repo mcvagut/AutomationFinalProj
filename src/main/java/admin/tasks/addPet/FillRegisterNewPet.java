@@ -15,7 +15,6 @@ import java.io.File;
 public class FillRegisterNewPet {
     public static void perform(WebDriver driver, String name, String raza, String description, Number age,
                                String color, String location) throws Exception {
-
         Enter.text(driver, ModalAddPetUI.nameTxt, name);
         //Thread.sleep(2000);
         Enter.text(driver, ModalAddPetUI.razaTxt, raza);
@@ -48,6 +47,6 @@ public class FillRegisterNewPet {
         Thread.sleep(2000);
         Click.on(driver, ModalAddPetUI.addPetBtn);
         Thread.sleep(2000);
-        //ScreenshotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Formulario llenado y agregando mascota");
+        ScreenshotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Formulario llenado y agregando nueva mascota");
     }
 }

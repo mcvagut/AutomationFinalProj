@@ -16,6 +16,7 @@ public class DeletePet extends BaseTestAdmin {
         Thread.sleep(2000);
         admin.tasks.deletePet.DeletePet.perform(driver);
         Thread.sleep(2000);
+        PetPage.perform(driver);
         Thread.sleep(2000);
         LogoutAdmin.perform(driver);
     }

@@ -13,6 +13,7 @@ public class SearchPetByName {
             throw new Exception("Barra de Búsqueda no encontrada");
 
         Enter.text(driver, HomeUI.searchBar, name);
-        ScreenshotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Formulario llenado y orden realizada");
+        Thread.sleep(2000);
+        ScreenshotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Búsqueda de mascota por nombre");
     }
 }

@@ -13,6 +13,6 @@ public class AdminRequestOrg {
             throw new Exception("El botón no fue encontrado");
 
         Click.on(driver, AdminRequestOrgUI.acceptButton);
-        ScreenshotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Formulario llenado y orden realizada");
+        ScreenshotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Gestionar solicitud de Adopción");
     }
 }

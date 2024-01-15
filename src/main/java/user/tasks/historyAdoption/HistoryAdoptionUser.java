@@ -9,10 +9,11 @@ import user.ui.SidebarUI;
 
 public class HistoryAdoptionUser {
     public static void perform(WebDriver driver) throws Exception {
-        if (!WaitUntilElement.isVisible(driver, SidebarUI.historyAdoptionBtn, 3))
+        if (!WaitUntilElement.isVisible(driver, SidebarUI.historyAdoptionBtn, 5))
             throw new Exception("El botón no fue encontrado");
 
         Click.on(driver, SidebarUI.historyAdoptionBtn);
-        ScreenshotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Formulario llenado y orden realizada");
+        Thread.sleep(2000);
+        ScreenshotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Adopción completada");
     }
 }

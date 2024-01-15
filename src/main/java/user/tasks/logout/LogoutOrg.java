@@ -11,6 +11,6 @@ public class LogoutOrg {
         public static void perform(WebDriver driver) throws Exception {
 
             Click.on(driver, SidebarOrgUI.logoutOrg);
-            ScreenshotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Formulario llenado y orden realizada");
+            ScreenshotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Cierre de sesión de albergue");
         }
 }

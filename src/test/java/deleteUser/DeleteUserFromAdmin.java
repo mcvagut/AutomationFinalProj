@@ -17,6 +17,7 @@ public class DeleteUserFromAdmin extends BaseTestAdmin {
         Thread.sleep(2000);
         DeleteUser.perform(driver);
         Thread.sleep(2000);
+        UserPage.perform(driver);
         LogoutAdmin.perform(driver);
     }
 }

@@ -26,7 +26,7 @@ public class BaseTestAdmin {
 
     @BeforeSuite
     public static void setupSuite() throws Exception {
-        ReportManager.init("Reports", "PurchaseSuite");
+        ReportManager.init("Reports", "Suite de pruebas de administrador");
     }
 
     @BeforeMethod
@@ -49,7 +49,7 @@ public class BaseTestAdmin {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.get(url);
         log.info("Navigate to {}", url);
-        ScreenshotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Navigate to login page");
+        ScreenshotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Redireccionando a login de administrador");
     }
 
     @AfterMethod

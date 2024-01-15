@@ -14,7 +14,7 @@ public class FillLoginForm {
         Enter.text(driver, LoginFormUI.passwordTxt, password);
 
         Click.on(driver, LoginFormUI.loginBtn);
-        ScreenshotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Formulario llenado y orden realizada");
+        ScreenshotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Inicio de sesión");
     }
 }
 

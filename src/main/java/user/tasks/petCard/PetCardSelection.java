@@ -1,8 +1,10 @@
 package user.tasks.petCard;
 
+import com.aventstack.extentreports.Status;
 import user.actions.Click;
 import user.actions.WaitUntilElement;
 import org.openqa.selenium.WebDriver;
+import user.helpers.ScreenshotHelper;
 import user.ui.HomeUI;
 
 public class PetCardSelection {
@@ -11,6 +13,5 @@ public class PetCardSelection {
             throw new Exception("Tarjeta de mascota no encontrada");
 
         Click.on(driver, HomeUI.selectPetCard);
-
 }
 }

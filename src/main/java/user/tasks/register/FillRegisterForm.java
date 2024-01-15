@@ -22,6 +22,6 @@ public class FillRegisterForm {
         Enter.text(driver, RegisterFormUI.dateBirthTxt, birthday);
 
         Click.on(driver, RegisterFormUI.registerBtn);
-        ScreenshotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Formulario llenado y orden realizada");
+        ScreenshotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Formulario llenado para nuevo usuario");
     }
 }
